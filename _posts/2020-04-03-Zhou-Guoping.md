@@ -10,7 +10,7 @@ article_header:
   type: overlay
   theme: dark
   background_image:
-    gradient: 'linear-gradient(135deg, rgba(39, 137, 221 , .4), rgba(208, 175, 96, .4))'
+    gradient: 'linear-gradient(135deg, rgba(107, 169, 56 , .4), rgba(208, 175, 96, .4))'
     src: /53117853.jpg
 ---
 
