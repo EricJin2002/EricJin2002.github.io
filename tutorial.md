@@ -68,3 +68,4 @@ key: page-tutorial
 #### [Github+Jekyll 搭建个人网站详细教程 - 简书](https://www.jianshu.com/p/9f71e260925d)
 #### [Jekyll • 简单静态博客网站生成器 - 将纯文本转换为静态博客网站](https://jekyllcn.com/)
 #### [jekyll-TeXt-theme/test at master · kitian616/jekyll-TeXt-theme](https://github.com/kitian616/jekyll-TeXt-theme/tree/master/test)
+#### [nginx配置访问密码，让用户输入用户名密码才能访问_运维_dream8062的专栏-CSDN博客](https://blog.csdn.net/dream8062/article/details/78416234)
