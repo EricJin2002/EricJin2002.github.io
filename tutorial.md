@@ -23,9 +23,10 @@ titles:
   fr-FR   : *FR
   fr-LU   : *FR
   # @end locale config
+show_title: false
 key: page-tutorial
 ---
-### 一些教程，整理自网络
+# 一些教程，整理自网络
 #### [GitHub - ScSofts/EasyXWarpper: EasyX的封装，供GCC（G++）使用，支持纯C和C++两种兼容](https://github.com/ScSofts/EasyXWarpper)
 #### [Visual Studio Code 如何编写运行 C、C++ 程序？ - 知乎](https://www.zhihu.com/question/30315894/answer/154979413)
 #### [为Microsoft C ++配置Visual Studio代码](https://code.visualstudio.com/docs/cpp/config-msvc)
