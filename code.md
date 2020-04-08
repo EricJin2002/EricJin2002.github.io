@@ -27,5 +27,7 @@ show_title: false
 key: page-code
 ---
 # 一些代码，主要为游戏
+#### [贪吃蛇](/2020/04/08/Snake.html)
+![Snake](/assets/images/2020-04-08-Snake.jpg){:.shadow.rounded}
 #### [五子棋](/2020/04/08/Gomoku.html)
-![Gomoku3](/assets/images/2020-04-08-Gomoku/2020-04-08-Gomoku-3.png){:.shadow}
+![Gomoku3](/assets/images/2020-04-08-Gomoku/2020-04-08-Gomoku-3.png){:.shadow.rounded}
