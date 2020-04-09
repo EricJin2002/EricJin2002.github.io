@@ -11,6 +11,10 @@ article_header:
   background_image:
     gradient: 'linear-gradient(0deg, rgba(255, 255, 255 , .0), rgba(255, 255, 255, .0))'
     src: /77235380.jpg
+page:
+  cover: /77235380.jpg
+  key: Brave-New-World
+  comment: true
 ---
 
 >我们如何去阻止乌托邦实现……  

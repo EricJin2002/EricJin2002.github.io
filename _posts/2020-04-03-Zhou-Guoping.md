@@ -12,6 +12,10 @@ article_header:
   background_image:
     gradient: 'linear-gradient(135deg, rgba(107, 169, 56 , .4), rgba(208, 175, 96, .4))'
     src: /53117853.jpg
+page:
+  cover: /53117853.jpg
+  key: Zhou-Guoping
+  comment: true
 ---
 
 “认识你自己”——刻在德尔斐的阿波罗神殿内的箴言
