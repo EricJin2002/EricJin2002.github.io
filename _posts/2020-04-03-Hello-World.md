@@ -4,7 +4,7 @@ title: Hello World !
 tags: TeXt
 page:
   cover: /psb.jpg
-  key: Hello-Wold
+  key: Hello-World
   comment: true
 ---
 
