@@ -1,15 +1,19 @@
 ---
 layout: article
-title: 
+title: LNMP环境下，利用Nginx反代Wikipedia
 tags: ["VPS"]
 page:
   key: Nginx-Wikipedia
   comment: true
 ---
 
-# LNMP环境下，利用Nginx反代Wikipedia
+>维基百科
+>海纳百川，有容乃大
+>人人可编辑的自由百科全书
 
-## 前记
+<!--more-->
+
+# 前记
 
 之前一直使用ShadowsocksR代理网络，但是这需要安装软件，还是很麻烦的。
 
@@ -21,24 +25,24 @@ page:
 
 特别感谢[Jhonson](minicloud.xyz)的指点、网上大佬们的教程，才有了如今[这个](wiki.ericdrive.ml)维基镜像站。
 
-## 准备
+# 准备
 
 1. 一台港澳台或国外的VPS
 2. Linux系统（笔者使用的是`Ubuntu 18.04 LTS`）
 3. LNMP环境（笔者使用的是`LNMP 1.6`，安装详见[LNMP官网](https://lnmp.org/install.html)）
 
-## 教程
+# 教程
 
-### 1. 为已安装的LNMP编译`ngx_http_substitutions_filter_module`模块
+## 1. 为已安装的LNMP编译`ngx_http_substitutions_filter_module`模块
 
-==下载`ngx_http_substitutions_filter_module`模块==
+### 下载`ngx_http_substitutions_filter_module`模块
 
 ```bash
 cd /root
 git clone "https://github.com/yaoweibin/ngx_http_substitutions_filter_module.git"
 ```
 
-==编辑`lnmp.conf`文件==
+### 编辑`lnmp.conf`文件
 
 ```bash
 vim /root/lnmp1.6/lnmp.conf
@@ -47,13 +51,13 @@ vim /root/lnmp1.6/lnmp.conf
 在`Nginx_Modules_Options`一项后的单引号间添加  
 `--add-module=/root/ngx_http_substitutions_filter_module`
 
-==查看`Nginx`版本号==
+### 查看`Nginx`版本号
 
 ```bash
 nginx -v
 ```
 
-==安装`ngx_http_substitutions_filter_module`模块==
+### 安装`ngx_http_substitutions_filter_module`模块
 
 ```bash
 cd /root/lnmp1.6
@@ -70,9 +74,9 @@ cd /root/lnmp1.6
 
 你将看到`--add-module=/root/ngx_http_substitutions_filter_module`
 
-### 2.添加vhost
+## 2.添加vhost
 
-==确保相关域名已添加至你的DNS解析服务商==
+### 确保相关域名已添加至你的DNS解析服务商
 
 以本站为例，分别为：
 
@@ -96,7 +100,7 @@ cd /root/lnmp1.6
 
 **将`lang`替换为你希望添加的维基语言，如`en`、`zh`分别对应英文中文维基，下同**
 
-==新建配置文件==
+### 新建配置文件
 
 ```bash
 lnmp vhost add
@@ -128,15 +132,15 @@ Enter 1 or 2:
 
 完成配置即可
 
-### 3.编辑配置文件
+## 3.编辑配置文件
 
-==配置`wiki.ericdrive.ml.conf`==
+### 配置`wiki.ericdrive.ml.conf`
 
 ```bash
 vim /usr/local/nginx/conf/vhost/wiki.ericdrive.ml.conf
 ```
 
-==用以下代码覆盖原文件==
+### 用以下代码覆盖原文件
 
 **注意：**
 
@@ -301,7 +305,7 @@ server {
 }
 ```
 
-### 4.重启`Nginx`
+## 4.重启`Nginx`
 
 ```bash
 lnmp nginx restart
