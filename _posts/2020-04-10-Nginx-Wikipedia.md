@@ -54,7 +54,7 @@ vim /root/lnmp1.6/lnmp.conf
 ### 查看`Nginx`版本号
 
 ```bash
-nginx -v
+nginx -V
 ```
 
 ### 安装`ngx_http_substitutions_filter_module`模块
@@ -70,7 +70,7 @@ cd /root/lnmp1.6
 
 不停回车即可
 
-编译结束时，输入`nginx -v`检查编译
+编译结束时，输入`nginx -V`检查编译
 
 你将看到`--add-module=/root/ngx_http_substitutions_filter_module`
 
