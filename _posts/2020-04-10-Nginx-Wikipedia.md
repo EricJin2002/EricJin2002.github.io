@@ -23,7 +23,7 @@ page:
 
 前者不仅时效性差还需要占用大量空间，对于我寒酸的服务器来说是个大问题，因此采用了第二个方案。
 
-特别感谢[Jhonson](minicloud.xyz)的指点、网上大佬们的教程，才有了如今[这个](wiki.ericdrive.ml)维基镜像站。
+特别感谢[Jhonson](https://minicloud.xyz)的指点、网上大佬们的教程，才有了如今[这个](https://wiki.ericdrive.ml)维基镜像站。
 
 # 准备
 
