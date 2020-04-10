@@ -88,6 +88,8 @@ cd /root/lnmp1.6
 
 `wiki.ericdrive.ml`
 
+`www.wiki.ericdrive.ml`
+
 `lang.wiki.ericdrive.ml`
 
 `lang.m.wiki.ericdrive.ml`
@@ -113,6 +115,7 @@ wiki.ericdrive.ml
 ```
 
 ```
+www.wiki.ericdrive.ml
 lang.wiki.ericdrive.ml
 lang.m.wiki.ericdrive.ml
 up.wiki.ericdrive.ml
