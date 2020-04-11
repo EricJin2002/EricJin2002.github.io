@@ -27,6 +27,8 @@ show_title: false
 key: page-code
 ---
 # 一些代码，主要为游戏
+#### [俄罗斯方块](/2020/04/11/Tetris.html)
+![Tetris](/assets/images/2020-04-11-Tetris.png){:.shadow.rounded}
 #### [贪吃蛇](/2020/04/08/Snake.html)
 ![Snake](/assets/images/2020-04-08-Snake.jpg){:.shadow.rounded}
 #### [五子棋](/2020/04/08/Gomoku.html)
