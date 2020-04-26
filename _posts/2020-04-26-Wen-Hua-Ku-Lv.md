@@ -5,12 +5,12 @@ tags: ["Quote"]
 mode: immersive
 header:
   theme: dark
-  background: 'linear-gradient(135deg, rgb(88, 87, 56), rgb(124, 140, 191))'
+  background: 'linear-gradient(135deg, rgb(196, 203, 62), rgb(91, 134, 189))'
 article_header:
   type: overlay
   theme: dark
   background_image:
-    gradient: 'linear-gradient(135deg, rgba(88, 87, 56 , .4), rgba(124, 140, 191, .4))'
+    gradient: 'linear-gradient(135deg, rgba(196, 203, 62, .4), rgba(91, 134, 189, .4))'
     src: /78591850.jpg
 page:
   cover: /78591850.jpg
