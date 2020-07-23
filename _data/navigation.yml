@@ -151,6 +151,56 @@ header:
 
   - titles:
       # @start locale config
+      en      : &EN       PasteBin
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  PasteBin
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  PasteBin
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       PasteBin
+      ko-KR   : *KO
+      fr      : &FR       PasteBin
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      # @end locale config
+    url: https://paste.ericdrive.ml
+
+  - titles:
+      # @start locale config
+      en      : &EN       URLShortener
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  URLShortener
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  URLShortener
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       URLShortener
+      ko-KR   : *KO
+      fr      : &FR       URLShortener
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      # @end locale config
+    url: https://site.ericdrive.ml/admin
+
+  - titles:
+      # @start locale config
       en      : &EN       Poet
       en-GB   : *EN
       en-US   : *EN
