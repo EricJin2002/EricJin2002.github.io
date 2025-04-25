@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>SIME: Enhancing Policy Self-Improvement with Modal-level Exploration</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><text style="color: var(--main-color);">SIME</text>: Enhancing
+              Policy <text style="color: var(--main-color);">S</text>elf-<text
+                style="color: var(--main-color);">I</text>mprovement
+              with <text style="color: var(--main-color);">M</text>odal-level <text
+                style="color: var(--main-color);">E</text>xploration
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/EricJin2002" target="_blank">Yang Jin</a><sup>*1</sup>,</span>
+              <span class="author-block">
+                <a href="https://lyuj1998.github.io" target="_blank">Jun Lv</a><sup>*1,3</sup>,</span>
+              <span class="author-block">
+                <a href="https://virlus.github.io" target="_blank">Wenye Yu</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://tonyfang.net" target="_blank">Hongjie Fang</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://dirtyharrylyl.github.io" target="_blank">Yong-Lu Li</a><sup>1</sup>, </span>
+              <span class="author-block">
+                <a href="https://www.mvig.org" target="_blank">Cewu Lu</a><sup>1,2,3</sup>, </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>Shanghai Jiao Tong University,
+                <sup>2</sup>Shanghai Innovation Institution,
+                <sup>3</sup>Noematrix Ltd.</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <!-- <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span> -->
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/EricJin2002/SIME" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!-- <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/video_in_3m.mp4" type="video/mp4">
+        </video> -->
+        <h2 class="subtitle has-text-centered">
+          <img src="static/images/teaser.svg" width="75%"><br>
+          With <text style="color: var(--main-color);"><b>modal-level exploration</b></text>,
+          the robot can generate <b>more diverse and multi-modal</b> interaction data.
+          <br>By learning from the most valuable trials and high-quality segments from these interactions,
+          <br>the robot can effectively refine its capabilities through <text
+            style="color: var(--main-color);"><b>self-improvement</b></text>.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Self-improvement requires robotic systems to initially learn from human-provided data and then gradually
+              enhance their capabilities through interaction with the environment. This is similar to how humans improve
+              their skills through continuous practice. However, achieving effective self-improvement is challenging,
+              primarily because robots tend to repeat their existing abilities during interactions, often failing to
+              generate new, valuable data for learning. In this paper, we identify the key to successful
+              self-improvement: modal-level exploration and data selection. By incorporating a modal-level exploration
+              mechanism during policy execution, the robot can produce more diverse and multi-modal interactions. At the
+              same time, we select the most valuable trials and high-quality segments from these interactions for
+              learning. We successfully demonstrate effective robot self-improvement on both simulation benchmarks and
+              real-world experiments. The capability for self-improvement will enable us to develop more robust and
+              high-success-rate robotic control strategies at a lower cost.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Overview</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full">
+            <div class="subtitle has-text-centered">
+              <p>
+                Starting from a robot policy learned from human-provided demonstrations, <br><b><text
+                    style="color: var(--main-color);"> SIME</text></b> enables the robot to explore multi-modal
+                interaction behaviors in the reasoning space, <br>collect and select the most valuable trajectories and
+                segments, and refine the policy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-two-thirds">
+            <div style="text-align: right;">
+              <img id="model" src="static/images/pipeline.svg" width="100%"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Key Findings</h2>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="content has-text-justified">
+              <p>
+                Previous works and our experiments demonstrate that
+                naively fine-tuning policies using self-collected interaction
+                data is often ineffective. This is because imitation learning
+                policies often produce repetitive or deterministic behaviors,
+                resulting in limited diversity in the collected data.
+              </p>
+              <div style="text-align: center;">
+                <img src="static/images/divvis.svg" width="75%"></img>
+              </div>
+              <br>
+
+              <p>
+                Our key finding in this paper is that introducing modal-level exploration during interaction can
+                significantly increase the diversity of the self-collected data and improve self-improvement
+                effectiveness.
+              </p>
+
+
+              <p>
+                For example, in the real-world <i>cup stacking</i> task,
+                <b>without the introduced<text style="color: var(--main-color);"> modal-level exploration</text></b>,
+                the original Diffusion Policy tends to output action sequences with low diversity, often
+                failing to complete the task even given multiple attempts.
+              </p>
+              <div id="results-without-sime" class="carousel results-carousel">
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/without_sime/1740990993691_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/without_sime/1740991018920_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/without_sime/1740991041533_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/without_sime/1740991064144_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/without_sime/1740991087662_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <br>
+
+              <p>
+                While <b>with the <text style="color: var(--main-color);"> modal-level exploration</text></b>,
+                even though the same policy model is used, the robot is able to discover solutions that are valuable for
+                the next round of learning.
+              </p>
+              <div id="results-with-sime" class="carousel results-carousel">
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/with_sime/1740988601139_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/with_sime/1740988656899_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/with_sime/1740989396206_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/with_sime/1740988835754_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="item">
+                  <video poster="" autoplay controls muted loop playsinline>
+                    <source src="static/videos/with_sime/1740988867447_cam_038522063145~1.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <br>
+
+              <p>
+                We are also surprised to find that after the introduction of <b><text style="color: var(--main-color);">
+                    modal-level exploration</text></b>, a clear multi-modal behavior emerges. Starting from the same
+                initial state, the robot is able to grab the cup from different sides.
+              </p>
+              <div style="text-align: center;">
+                <img src="static/images/realworld.jpg" width="75%"></img>
+              </div>
+              <br>
+
+              <p>
+                By training the policy with self-collected data and performing only one round of <b><text
+                    style="color: var(--main-color);">self-improvement</text></b>, <b><text
+                    style="color: var(--main-color);">SIME</text></b> outperforms the baseline method by a significant
+                margin, both on state-based and image-based tasks, in simulation and real world.
+              </p>
+              <div style="text-align: center;">
+                <img src="static/images/single_round_results.png" width="100%"></img>
+              </div>
+              <br>
+
+              <p>
+                As the number of iterations increases, the advantage of <b><text
+                    style="color: var(--main-color);">SIME</text></b> over baseline continues to grow.
+              </p>
+              <div style="text-align: center;">
+                <img src="static/images/multi_round_results.png" width="100%"></img>
+              </div>
+              <br>
+
+              <p>
+                We conduct a thorough ablation study to validate the effectiveness of several key components in
+                SIME. Our studies also highlight the critical role of <b><text style="color: var(--main-color);">data
+                    selection</text></b> in self-improvement.
+              </p>
+              <div style="text-align: center;">
+                <img src="static/images/ablations.png" width="100%"></img>
+              </div>
+              <br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">For more information, please read our paper.</h2>
+      <video id="tree" controls muted loop poster="static/images/video_poster.png" height="100%">
+        <source src="static/videos/video_in_3m.mp4" type="video/mp4">
+      </video>
+
+      <!-- <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            </div> -->
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+        <iframe src="static/pdfs/sample.pdf" width="100%" height="550"></iframe>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Citation</h2>
+        </div>
+      </div>
+      <!-- <h2 class="title">BibTeX</h2> -->
+      <pre><code>
+        BibTex Code Here
+      </code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. This website is licensed
+              under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
